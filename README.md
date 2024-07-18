@@ -1,1 +1,1 @@
-# MY_SKILLS
+dic in readme
