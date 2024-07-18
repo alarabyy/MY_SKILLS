@@ -1,0 +1,76 @@
+body{
+    background-color: rgb(144, 9, 85);
+    font-size: xx-large;
+    font-weight:900;
+    background-image: url("./earth-from-space-abstract-background-3d-rendering_24070-1719.avif");
+    background-size: cover;
+}
+
+.calc{
+    background-color: black;
+    margin: auto;
+    width: 268px;
+    height: 420px;
+    border-left: 3px solid rgb(49, 69, 148) ;
+    border-right: 3px solid  rgb(49, 69, 148) ;
+    border-bottom: 3px solid aqua;
+    border-top : 3px solid aqua;
+    transform: translate(0vw,20vh);
+    border-radius: 5%;
+    box-shadow: 10px 20px 40px black ;
+}
+.maininput{
+    background: none;
+    border: 2px solid rosybrown;
+    width: 261px;
+    height: 65px;
+    color: aliceblue;
+    font-size: 25px;
+
+}
+.numbtn{
+    padding: 24px 25px;
+    border-radius: 50%;
+    color: white;
+    border: 2px solid aqua;
+    background: rgb(3, 83, 255);
+}.numbtn:hover {
+    background: rgb(57, 90, 255);
+    color: rgb(11, 11, 11);
+
+}
+.calcbtn{
+    padding: 24px 25px;
+    border-radius: 50%;
+    border: 2px solid aqua;
+
+}.calcbtn:hover{
+    background: rgb(118, 117, 118);
+    color: aliceblue;
+
+}
+.c{
+    padding: 24px 25px;
+    border-radius: 50%;
+    color: black;
+    border: 2px solid aqua;
+    background: rgb(1, 251, 255);
+
+}.c:hover{
+    background: rgb(34, 101, 146);
+    color: rgb(255, 255, 255);
+
+
+}
+.equal{
+    padding: 24px 25px;
+    border-radius: 50%;
+    border: 2px solid aqua;
+    background: rgb(248, 25, 25);
+    color: aliceblue;
+
+}.equal:hover{
+    background: rgb(251, 94, 94);
+    color: rgb(18, 18, 18);
+
+}
