@@ -8,6 +8,6 @@
 #     print("\033[1;32m==============================Alaraby========================================")
  
 # my_name()
-def welcome(x):
-    print(f"welcome {x}")
+# def welcome(x):
+#     print(f"welcome {x}")
 
