@@ -1,1 +1,0 @@
-dic in readme
