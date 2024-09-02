@@ -1,0 +1,90 @@
+body {
+    background-color: #f0f2f5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  h1 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  #game-board {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 600px; /* حدود العرض لتكون متجاوبة */
+    margin: auto;
+  }
+  
+  .card {
+    width: 100px;
+    height: 150px;
+    margin: 10px;
+    perspective: 1000px;
+    cursor: pointer;
+    border-radius: 10px; /* زوايا مستديرة للكروت */
+  }
+  
+  .card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+    border-radius: 10px; /* زوايا مستديرة للكروت */
+  }
+  
+  .card.flipped .card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .card-front,
+  .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px; /* زوايا مستديرة للكروت */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* إضافة ظل للكرت */
+  }
+  
+  .card-front {
+    background-color: #007bff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2rem;
+    border-radius: 10px;
+  }
+  
+  .card-back {
+    background-size: cover;
+    transform: rotateY(180deg);
+    border-radius: 10px;
+  }
+  
+  .hidden {
+    visibility: hidden;
+  }
+  
+  #reset {
+    margin-top: 20px;
+  }
+  
+  /* تحسين التصميم للأجهزة المحمولة */
+  @media (max-width: 576px) {
+    .card {
+      width: 80px;
+      height: 120px;
+    }
+  
+    #game-board {
+      max-width: 100%; /* إزالة الحدود لتصبح ملء الشاشة */
+    }
+  }
+  
